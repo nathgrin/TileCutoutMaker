@@ -1,12 +1,13 @@
-De bestanden voor cutouts op 50x70cm papier zijn in principe te vinden in de folder svg/
+Er zijn drie folders:
+- De bestanden voor cutouts op 50x70cm papier zijn in principe te vinden in de folder svg/
+- De folder png/ bevat dezelfde bestanden als svg/ maar dan in .png formaat, voor als de svg bestanden niet werken.
+- In de filder tiles/ zijn enkele svg bestanden opgenomen van losse tekeningen.
 
-De folder png/ bevat dezelfde bestanden als svg/ maar dan in .png formaat, voor als de svg bestanden niet werken.
-
-In de filder tiles/ zijn enkele svg bestanden opgenomen van losse tekeningen.
+Deze folder is ook te vinden via https://github.com/nathgrin/TileCutoutMaker/tree/main/CRE8_bestanden
 
 De onderlinge verhoudingen zijn belangrijk.
 
-Bestelling, in alfabetische volgorde: (totaal )
+Bestelling, in alfabetische volgorde: (totaal 50x)
 EinsteinHat.svg 4x
 EinsteinSpectre.svg 4x
 PenroseQuadDart.svg 2x
