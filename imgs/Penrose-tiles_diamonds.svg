@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape ("http://www.inkscape.org/") -->
+<svg id="svg1" sodipodi:version="0.32" inkscape:version="0.37cvs" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" width="512.28pt" height="554.89pt" sodipodi:docbase="/home/cgawron" sodipodi:docname="/home/cgawron/penrose-tiles.svg">
+  <defs id="defs3">
+    <linearGradient id="linearGradient697">
+      <stop style="stop-color:#000;stop-opacity:1;" offset="0" id="stop698"/>
+      <stop style="stop-color:#fff;stop-opacity:1;" offset="1" id="stop699"/>
+    </linearGradient>
+    <linearGradient xlink:href="#linearGradient697" id="linearGradient700"/>
+  </defs>
+  <sodipodi:namedview id="base" showgrid="true" snaptogrid="false" gridspacingy="5mm"/>
+  <g id="g744" transform="translate(-33.00453,-8.801239)">
+    <polygon sodipodi:type="star" style="font-size:12;fill:#ffff00;fill-opacity:0.75;fill-rule:evenodd;stroke-width:3pt;" id="polygon562" sodipodi:sides="5" sodipodi:cx="58.3026161" sodipodi:cy="241.955841" sodipodi:r1="0.00100000" sodipodi:r2="0" sodipodi:arg1="0" sodipodi:arg2="0.62831855" points="58.3036,241.956 58.3026,241.956 58.3029,241.957 58.3026,241.956 58.3018,241.956 58.3026,241.956 58.3018,241.955 58.3026,241.956 58.3029,241.955 58.3026,241.956 58.3036,241.956 "/>
+    <path style="font-size:12;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;" d="M 88.5827 520.866 L 354.331 432.283 L 620.079 520.866 L 354.331 609.449 L 88.5827 520.866 z " id="path569" sodipodi:nodetypes="ccccc" transform="translate(-2.670288e-4,-354.3303)"/>
+    <path style="font-size:12;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;" d="M 194.882 485.433 C 204.838 506.937 208.025 533.05 194.882 556.299 " id="path570" sodipodi:nodetypes="cc" transform="translate(-2.670288e-4,-354.3303)"/>
+    <path style="font-size:12;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;" d="M 354.582 432.839 C 354.582 432.839 353.506 608.156 353.918 608.802 C 354.331 609.449 354.582 608.802 354.582 608.802 " id="path571" transform="translate(-2.670288e-4,-354.3303)"/>
+    <text xml:space="preserve" style="font-size:20;font-weight:normal;opacity:0.99;fill-opacity:0.75;stroke-width:3pt;font-family:Microsoft Sans Serif;font-style:normal;text-anchor:start;writing-mode:lr;" x="359.230377" y="525.800812" id="text572" sodipodi:linespacing="100%" transform="translate(-2.670288e-4,-354.3303)">
+      <tspan x="359.230377" y="525.800842" sodipodi:role="line" id="tspan737">1/τ</tspan>
+    </text>
+    <text xml:space="preserve" style="font-size:12;font-weight:normal;fill-opacity:0.75;stroke-width:3pt;font-family:Microsoft Sans Serif;" x="208.499702" y="525.800781" id="text591" sodipodi:linespacing="100%" transform="translate(-2.670288e-4,-354.3303)">
+      <tspan x="208.499695" y="525.800781" sodipodi:role="line" id="tspan594">36°</tspan>
+    </text>
+    <text xml:space="preserve" style="font-size:12;font-weight:normal;fill-opacity:0.75;stroke-width:3pt;font-family:Microsoft Sans Serif;" x="57.8566264" y="516.526187" id="text596" sodipodi:linespacing="100%" transform="matrix(0.951057,-0.309017,0.309017,0.951057,-2.670288e-4,-354.3303)">
+      <tspan x="57.8566246" y="516.526184" sodipodi:role="line" id="tspan599">1</tspan>
+    </text>
+    <path sodipodi:type="arc" style="fill:red;fill-rule:evenodd;stroke:none;fill-opacity:0.75;stroke-opacity:1;stroke-width:3pt;stroke-linejoin:miter;stroke-linecap:butt;" id="path653" d="M 212.598419 166.535385 A 62.007870 0.000000 0 1 0 88.582672,166.535385 A 62.0079 0 0 1 0 212.598 166.535 L 150.590546 166.535385 z" sodipodi:cx="150.590546" sodipodi:cy="166.535385" sodipodi:rx="62.007870" sodipodi:ry="0.000000"/>
+  </g>
+  <g id="g759" transform="translate(-4.400597,-46.20633)">
+    <path style="font-size:12;fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;" d="M 88.5827 520.866 L 354.331 432.283 L 620.079 520.866 L 354.331 609.449 L 88.5827 520.866 z " id="path641" sodipodi:nodetypes="ccccc" transform="matrix(0.884652,0.000000,0.000000,1.915822,10.21782,-477.1733)"/>
+    <path style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-width:1pt;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:0.75;" d="M 88.5827 520.866 L 554.687 519.428 " id="path694" sodipodi:nodetypes="cc"/>
+    <path transform="matrix(0.810360,0.000000,0.000000,0.720955,-98.05543,294.7084)" style="font-size:12;opacity:0.99;stroke:#000000;fill:none;fill-rule:evenodd;stroke-width:1pt;" d="M 342.376 222.668 C 383.467 277.301 385.188 350.484 342.544 403.84 " id="path696" sodipodi:nodetypes="cc"/>
+    <text xml:space="preserve" style="fill:black;stroke:none;font-family:Microsoft Sans Serif;font-style:normal;font-weight:normal;font-size:12;text-anchor:start;writing-mode:lr;fill-opacity:0.75;stroke-opacity:1;stroke-width:3pt;stroke-linejoin:miter;stroke-linecap:butt;" x="205.877960" y="517.337631" id="text702">
+      <tspan id="tspan703">72°</tspan>
+    </text>
+    <text xml:space="preserve" style="fill:black;stroke:none;font-family:Microsoft Sans Serif;font-style:normal;font-weight:normal;font-size:20;text-anchor:start;writing-mode:lr;fill-opacity:0.75;stroke-opacity:1;stroke-width:3pt;stroke-linejoin:miter;stroke-linecap:butt;" x="318.744657" y="516.008972" id="text713" sodipodi:linespacing="100%">
+      <tspan x="318.744659" y="516.008972" sodipodi:role="line" id="tspan716">τ</tspan>
+    </text>
+  </g>
+</svg>

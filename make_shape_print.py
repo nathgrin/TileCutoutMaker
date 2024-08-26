@@ -201,15 +201,22 @@ def draw_regular_polygon(ax,n=3):
     
     # ax.plot([0],[0],marker='x')
     
+    xlist = [pt1[0],pt2[0]]
+    ylist = [pt1[1],pt2[1]]
     
     for i in range(n):
-        ax.plot([pt1[0],pt2[0]],[pt1[1],pt2[1]],c='k',ls='-')
-        
         pt1 = ( (pt1[0]-mid[0])*np.cos(int_top_angle)-(pt1[1]-mid[1])*np.sin(int_top_angle)+mid[0], (pt1[0]-mid[0])*np.sin(int_top_angle)+(pt1[1]-mid[1])*np.cos(int_top_angle)+mid[1] )
         pt2 = ( (pt2[0]-mid[0])*np.cos(int_top_angle)-(pt2[1]-mid[1])*np.sin(int_top_angle)+mid[0], (pt2[0]-mid[0])*np.sin(int_top_angle)+(pt2[1]-mid[1])*np.cos(int_top_angle)+mid[1] )
+        
+        xlist.extend([pt1[0],pt2[0]])
+        ylist.extend([pt1[1],pt2[1]])
+        
+        ax.plot([pt1[0],pt2[0]],[pt1[1],pt2[1]],c='k',ls='-')
+    
         # ax.plot([pt1[0]],[pt1[1]],marker='o')
         # ax.plot([pt2[0]],[pt2[1]],marker='s')
         
+    ax.plot(xlist,ylist,c='k',ls='-')
     
     # ax.plot([0,1],[0,0],c='k',ls='-')
     # ax.plot([0,0.5],[0,np.sqrt(3)/2],c='k',ls='-')
@@ -262,26 +269,11 @@ def main():
     paperwh = (70/2.54,50/2.54) #  inches
     min_margin = 0.4135 # minimal margin in inches
     space_between_subplots = 1/2.54 # wspace and hspace in inches
-    ext = ".png"
+    ext = ".svg"#".png"
     
-    show_figure = False # SHOW?
+    show_figure = True # SHOW?
     
-    ## Penrose   and aperiodic haha
-    subplot_height = 5/2.54 # inch
-    loc_in = "imgs"
-    for figure_fname in ["spectre_curve_aspect","penrose_kite_aspect","penrose_dart_aspect","spectre_aspect","hat_aspect"]:
-        draw_func_kwargs = {'fname':os.path.join(loc_in,figure_fname+".png")}
-        draw_func = draw_figure_from_file
-
-        fname = "grid_of_%s%s"%(figure_fname,ext)
-        print(">",fname)
-        
-        
-        # nxny,subplots_adjust_kwargs = get_nxny_etc_from_paperwh_and_height(paperwh,subplot_height,min_margin=min_margin)
-        nxny,subplots_adjust_kwargs,subplot_aspect = get_nxny_etc_from_img_and_subplotheight(draw_func_kwargs['fname'],paperwh,subplot_height,min_margin=min_margin,space_between_subplots=space_between_subplots)
-        
-        make_figure_with_shapes(fname,paperwh,nxny,draw_func,draw_func_kwargs,subplots_adjust_kwargs,subplot_aspect=subplot_aspect,show_figure=show_figure)
-        
+    
     ## Regular polygons
     # We use a reference, all other polygons will have sides with the same length as set by these two numbers.
     reference_n = 3
@@ -300,6 +292,23 @@ def main():
         
     print("Done")
 
+    
+    ## Penrose   and aperiodic haha
+    subplot_height = 5/2.54 # inch
+    loc_in = "imgs"
+    for figure_fname in ["penrose_P3_fat","penrose_P3_slim","spectre_curve_aspect","penrose_kite_aspect","penrose_dart_aspect","spectre_aspect","hat_aspect"]:
+        draw_func_kwargs = {'fname':os.path.join(loc_in,figure_fname+".png")}
+        draw_func = draw_figure_from_file
+
+        fname = "grid_of_%s%s"%(figure_fname,ext)
+        print(">",fname)
+        
+        
+        # nxny,subplots_adjust_kwargs = get_nxny_etc_from_paperwh_and_height(paperwh,subplot_height,min_margin=min_margin)
+        nxny,subplots_adjust_kwargs,subplot_aspect = get_nxny_etc_from_img_and_subplotheight(draw_func_kwargs['fname'],paperwh,subplot_height,min_margin=min_margin,space_between_subplots=space_between_subplots)
+        
+        make_figure_with_shapes(fname,paperwh,nxny,draw_func,draw_func_kwargs,subplots_adjust_kwargs,subplot_aspect=subplot_aspect,show_figure=show_figure)
+        
     
 
 
