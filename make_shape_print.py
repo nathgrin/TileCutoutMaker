@@ -255,9 +255,30 @@ def make_figure_with_shapes(fname,
     
     plt.subplots_adjust(**subplots_adjust_kwargs)
 
-    plt.savefig(fname)#,bbox_inches='tight',pad_inches=0.0)
+    savefig_kwargs = {'dpi':150}
+    plt.savefig(fname,**savefig_kwargs)#,bbox_inches='tight',pad_inches=0.0)
     if show_figure:
         plt.show()
+
+def outfname_from_imgfname(imgfname):
+    if "penrose_P3" in imgfname:
+        if "fat" in imgfname:
+            out = "PenroseRhombiFat"
+        if "slim" in imgfname:
+            out = "PenroseRhombiSlim"
+    elif "penrose_kite" in imgfname:
+        out = "PenroseQuadKite"
+    elif "penrose_dart" in imgfname:
+        out = "PenroseQuadDart"
+    elif "spectre_curve" in imgfname:
+        out = "EinsteinSpectre"
+    elif "spectre" in imgfname:
+        out = "EinsteinSpectreStraight"
+    elif "hat" in imgfname:
+        out = "EinsteinHat"
+    else:
+        raise ValueError("Could not find name %s to convert imgname.."%(imgfname))
+    return out
 
 def main():
     # tst()
@@ -267,41 +288,27 @@ def main():
     
     # paperwh = (11.69,8.27) # a4, inches
     paperwh = (70/2.54,50/2.54) #  inches
-    min_margin = 0.4135 # minimal margin in inches
+    min_margin = 1/2.54# 0.4135 # minimal margin in inches
     space_between_subplots = 1/2.54 # wspace and hspace in inches
-    ext = ".svg"#".png"
+    ext = ".svg"#".png"# extension for output
     
-    show_figure = True # SHOW?
+    out_loc = "svg"
     
+    show_figure = False # SHOW?
     
-    ## Regular polygons
-    # We use a reference, all other polygons will have sides with the same length as set by these two numbers.
-    reference_n = 3
-    reference_ny = 14
-    reference = (reference_n,reference_ny)
-    for i in range(3,13):# range(5,11,5):#
-        draw_func_kwargs = {'n':i}
-        draw_func = draw_regular_polygon
-        
-        fname = "regular_polygon_%i%s"%(i,ext)
-        print(">",fname)
-        
-        nxny,subplots_adjust_kwargs = get_nxny_etc_for_regular_polygon(i,reference=reference,paperwh=paperwh,min_margin=min_margin,space_between_subplots=space_between_subplots)
-        
-        make_figure_with_shapes(fname,paperwh,nxny,draw_func,draw_func_kwargs,subplots_adjust_kwargs,show_figure=show_figure)
-        
-    print("Done")
 
     
     ## Penrose   and aperiodic haha
     subplot_height = 5/2.54 # inch
     loc_in = "imgs"
-    for figure_fname in ["penrose_P3_fat","penrose_P3_slim","spectre_curve_aspect","penrose_kite_aspect","penrose_dart_aspect","spectre_aspect","hat_aspect"]:
-        draw_func_kwargs = {'fname':os.path.join(loc_in,figure_fname+".png")}
+    for image_fname in sorted(["penrose_P3_fat","penrose_P3_slim","spectre_curve_aspect","penrose_kite_aspect","penrose_dart_aspect","hat_aspect","spectre_aspect"]):#
+        draw_func_kwargs = {'fname':os.path.join(loc_in,image_fname+".png")}
         draw_func = draw_figure_from_file
 
-        fname = "grid_of_%s%s"%(figure_fname,ext)
-        print(">",fname)
+        # fname = "grid_of_%s%s"%(image_fname,ext)
+        fname = "%s%s"%(outfname_from_imgfname(image_fname),ext)
+        fname = os.path.join(out_loc,fname)
+        print(">",fname,"| from image",image_fname)
         
         
         # nxny,subplots_adjust_kwargs = get_nxny_etc_from_paperwh_and_height(paperwh,subplot_height,min_margin=min_margin)
@@ -310,6 +317,25 @@ def main():
         make_figure_with_shapes(fname,paperwh,nxny,draw_func,draw_func_kwargs,subplots_adjust_kwargs,subplot_aspect=subplot_aspect,show_figure=show_figure)
         
     
+    ## Regular polygons
+    # We use a reference, all other polygons will have sides with the same length as set by these two numbers.
+    reference_n = 3
+    reference_ny = 12#14
+    reference = (reference_n,reference_ny)
+    for i in range(3,13):# range(5,11,5):#
+        draw_func_kwargs = {'n':i}
+        draw_func = draw_regular_polygon
+        
+        fname = "poly_%i%s"%(i,ext)
+        fname = os.path.join(out_loc,fname)
+        print(">",fname)
+        
+        nxny,subplots_adjust_kwargs = get_nxny_etc_for_regular_polygon(i,reference=reference,paperwh=paperwh,min_margin=min_margin,space_between_subplots=space_between_subplots)
+        
+        make_figure_with_shapes(fname,paperwh,nxny,draw_func,draw_func_kwargs,subplots_adjust_kwargs,show_figure=show_figure)
+        
+        
+    print("Done")
 
 
 if __name__ == "__main__":
