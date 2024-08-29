@@ -18,9 +18,9 @@ poly_3.svg 3x
 poly_4.svg 3x
 poly_5.svg 3x
 poly_6.svg 3x
-poly_7.svg 3x
+poly_7.svg 2x
 poly_8.svg 3x
 poly_9.svg 3x
 poly_10.svg 3x
 poly_11.svg 3x
-poly_12.svg 3x
+poly_12.svg 4x
