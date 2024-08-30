@@ -255,7 +255,7 @@ def make_figure_with_shapes(fname,
     
     plt.subplots_adjust(**subplots_adjust_kwargs)
 
-    savefig_kwargs = {'dpi':150}
+    savefig_kwargs = {'dpi':300}
     plt.savefig(fname,**savefig_kwargs)#,bbox_inches='tight',pad_inches=0.0)
     if show_figure:
         plt.show()
@@ -290,9 +290,9 @@ def main():
     paperwh = (70/2.54,50/2.54) #  inches
     min_margin = 1/2.54# 0.4135 # minimal margin in inches
     space_between_subplots = 1/2.54 # wspace and hspace in inches
-    ext = ".svg"#".png"# extension for output
+    ext = ".png"#".png"# extension for output
     
-    out_loc = "svg"
+    out_loc = "png"
     
     show_figure = False # SHOW?
     
