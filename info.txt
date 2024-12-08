@@ -1,30 +1,35 @@
-> grid_of_spectre_curve_aspect.png
-Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.4019607843137254
-> grid_of_penrose_kite_aspect.png
-Height in cm: 5.0 | Number of figures: (13,8) 104 | Aspect ratio h/w: 1.1818181818181819
-> grid_of_penrose_dart_aspect.png
-Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.3928571428571428
-> grid_of_spectre_aspect.png
-Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.4411764705882353
-> grid_of_hat_aspect.png
+> png\EinsteinHat.png | from image hat_aspect
 Height in cm: 5.0 | Number of figures: (14,8) 112 | Aspect ratio h/w: 1.3771929824561404
-> regular_polygon_3.png
-n: 3 | Height in cm: 2.492815714285715 | Side of figure in cm: 2.15884173552448 | Number of figures: (19,13) 247
-> regular_polygon_4.png
-n: 4 | Height in cm: 3.0530632613957893 | Side of figure in cm: 2.1588417355244798 | Number of figures: (16,12) 192
-> regular_polygon_5.png
-n: 5 | Height in cm: 3.672840934856039 | Side of figure in cm: 2.1588417355244798 | Number of figures: (14,10) 140
-> regular_polygon_6.png
-n: 6 | Height in cm: 4.317683471048959 | Side of figure in cm: 2.1588417355244798 | Number of figures: (12,9) 108
-> regular_polygon_7.png
-n: 7 | Height in cm: 4.975622594004506 | Side of figure in cm: 2.1588417355244798 | Number of figures: (11,8) 88
-> regular_polygon_8.png
-n: 8 | Height in cm: 5.641325317331453 | Side of figure in cm: 2.1588417355244798 | Number of figures: (10,7) 70
-> regular_polygon_9.png
-n: 9 | Height in cm: 6.312030965582188 | Side of figure in cm: 2.1588417355244798 | Number of figures: (9,6) 54
-> regular_polygon_10.png
-n: 10 | Height in cm: 6.98615860882084 | Side of figure in cm: 2.1588417355244798 | Number of figures: (8,6) 48
-> regular_polygon_11.png
-n: 11 | Height in cm: 7.662734331196098 | Side of figure in cm: 2.1588417355244798 | Number of figures: (7,5) 35
-> regular_polygon_12.png
-n: 12 | Height in cm: 8.34112394885524 | Side of figure in cm: 2.15884173552448 | Number of figures: (7,5) 35
+> png\PenroseRhombiFat.png | from image penrose_P3_fat
+Height in cm: 5.0 | Number of figures: (16,8) 128 | Aspect ratio h/w: 1.5918367346938775
+> png\PenroseRhombiSlim.png | from image penrose_P3_slim
+Height in cm: 5.0 | Number of figures: (25,8) 200 | Aspect ratio h/w: 3.0
+> png\PenroseQuadDart.png | from image penrose_dart_aspect
+Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.3928571428571428
+> png\PenroseQuadKite.png | from image penrose_kite_aspect
+Height in cm: 5.0 | Number of figures: (13,8) 104 | Aspect ratio h/w: 1.1818181818181819
+> png\EinsteinSpectreStraight.png | from image spectre_aspect
+Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.4411764705882353
+> png\EinsteinSpectre.png | from image spectre_curve_aspect
+Height in cm: 5.0 | Number of figures: (15,8) 120 | Aspect ratio h/w: 1.4019607843137254
+> png\poly_3.png
+n: 3 | Height in cm: 3.0833333333333335 | Side of figure in cm: 2.6702449950020197 | Number of figures: (16,12) 192
+> png\poly_4.png
+n: 4 | Height in cm: 3.7762966867907326 | Side of figure in cm: 2.6702449950020193 | Number of figures: (14,10) 140
+> png\poly_5.png
+n: 5 | Height in cm: 4.542892126992913 | Side of figure in cm: 2.6702449950020197 | Number of figures: (12,8) 96
+> png\poly_6.png
+n: 6 | Height in cm: 5.340489990004037 | Side of figure in cm: 2.6702449950020197 | Number of figures: (10,7) 70
+> png\poly_7.png
+n: 7 | Height in cm: 6.154286861344051 | Side of figure in cm: 2.6702449950020197 | Number of figures: (9,6) 54
+> png\poly_8.png
+n: 8 | Height in cm: 6.977686435232286 | Side of figure in cm: 2.6702449950020197 | Number of figures: (8,6) 48
+> png\poly_9.png
+n: 9 | Height in cm: 7.807274065900364 | Side of figure in cm: 2.6702449950020197 | Number of figures: (7,5) 35
+> png\poly_10.png
+n: 10 | Height in cm: 8.64109432040512 | Side of figure in cm: 2.6702449950020193 | Number of figures: (7,5) 35
+> png\poly_11.png
+n: 11 | Height in cm: 9.47794257411627 | Side of figure in cm: 2.6702449950020197 | Number of figures: (6,4) 24
+> png\poly_12.png
+n: 12 | Height in cm: 10.3170344127663 | Side of figure in cm: 2.6702449950020197 | Number of figures: (6,4) 24
+Done
